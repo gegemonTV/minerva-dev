@@ -38,6 +38,24 @@ string/memcpy.o \
 string/memmove.o \
 string/memset.o \
 string/strlen.o \
+ctype/isalnum.o \
+ctype/isalpha.o \
+ctype/iscntrl.o \
+ctype/isdigit.o \
+ctype/isgraph.o \
+ctype/islower.o \
+ctype/isprint.o \
+ctype/ispunct.o \
+ctype/isspace.o \
+ctype/isupper.o \
+ctype/isxdigit.o \
+ctype/tolower.o \
+ctype/toupper.o \
+ctype/xctype.o \
+ctype/xtolower.o \
+ctype/xtoupper.o \
+errno/errno.o \
+float/xfloat.o \
 assert/xassert.o \
 
 
