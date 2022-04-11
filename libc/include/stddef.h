@@ -1,37 +1,19 @@
-#ifndef _STDDEF_H_
-#define _STDDEF_H_
-
-#include <sys/types.h>
-
-/* Signed type of difference of two pointers.  */
-
-#if defined(_STDDEF_H_) || defined(__need_ptrdiff_t)
-#ifndef _PTRDIFF_T
-#define _PTRDIFF_T
-#ifndef __PTRDIFF_TYPE__ 
-#define __PTRDIFF_TYPE__ long int;
+#ifndef _STDDEF
+#define _STDDEF
+#ifndef _YVALS
+#include <yvals.h>
 #endif
-typedef __PTRDIFF_TYPE__ ptrdiff_t;
+		/* macros */
+#define NULL	_NULL
+#define offsetof(T, member)	((_Sizet)&((T *)0)->member)
+		/* type definitions */
+#ifndef _SIZET
+#define _SIZET
+typedef _Sizet size_t;
 #endif
-
-#undef __need_ptrdiff_t
-
-#endif /* defined(_STDDEF_H_) || defined(__need_ptrdiff_t) */
-
-/* Unsigned type of `sizeof' something.  */
-
-#if defined(_STDDEF_H_) || defined(__need_size_t)
-#ifndef _SIZE_T_
-#define _SIZE_T_
-#ifndef __SIZE_TYPE__
-#define __SIZE_TYPE__ long unsigned int
+#ifndef _WCHART
+#define _WCHART
+typedef _Wchart wchar_t;
 #endif
-typedef __SIZE_TYPE__ size_t;
-#endif
-
-#undef __need_size_t
-
-#endif /* defined(_STDDEF_H_) || defined(__need_size_t) */
-
-
+typedef _Ptrdifft ptrdiff_t;
 #endif
