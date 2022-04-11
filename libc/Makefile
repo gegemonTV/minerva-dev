@@ -104,6 +104,10 @@ math/xlog.o \
 math/xpoly.o \
 math/xsin.o \
 math/xvals.o \
+setjmp/longjmp.o \
+setjmp/setjmp.o \
+signal/raise.o \
+signal/signal.o \
 assert/xassert.o \
 
 
