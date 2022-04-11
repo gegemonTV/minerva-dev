@@ -56,6 +56,18 @@ ctype/xtolower.o \
 ctype/xtoupper.o \
 errno/errno.o \
 float/xfloat.o \
+locale/localeco.o \
+locale/setlocal.o \
+locale/xdeflocal.o \
+locale/xfmtval.o \
+locale/xfreeloc.o \
+locale/xgetloc.o \
+locale/xloctab.o \
+locale/xlocterm.o \
+locale/xmakeloc.o \
+locale/xreadloc.o \
+locale/xsetloc.o \
+locale/xstate.o \
 assert/xassert.o \
 
 
